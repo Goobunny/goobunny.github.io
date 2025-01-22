@@ -1,0 +1,32 @@
+:root {
+	--blue-gradient: linear-gradient(to bottom, #245edb 0%, #3f8cf3 9%, #245edb 18%, #245edb 92%, #333 100%) center/cover no-repeat;
+}
+
+body {
+	background-image: url('https://goobunny.github.io/Spacehey.gif');
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+}
+body:before {
+	content: " ";
+	height: 100vh;
+	width: 100vw;
+	display: block;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 100;
+	background-image: url('https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExczVqejhmY29qcDNidmFpamlha2FpdTFxdXFsYjl0eXFpdDlvMjZlNiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/ujf2mILD255MWfGdOV/giphy.gif');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	animation: yourAnimation 5s ease 0s 1 normal forwards;
+	pointer-events: none;
+}
+@keyframes yourAnimation { 0.0% { opacity: 1; } 75% { opacity: 1; } 100% { opacity: 0; } }
+nav, footer {
+	margin: 1em;
+	position: relative;
+	box-shadow: 5px 8px 10px #0006;
+}
